@@ -1,5 +1,8 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Preview
+
+![GitHub Profile Finder Preview](https://github.com/mtahashahid/github-profile-finder/blob/main/app/assets/github-profile-finder.png)
 ## Getting Started
 
 First, run the development server:
