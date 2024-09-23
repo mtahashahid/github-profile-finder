@@ -1,5 +1,4 @@
 "use client";
-import { useState } from "react";
 import Image from "next/image";
 import Octocat from "../app/octocat.svg";
 import LocationIcon from "../app/icon-location.svg";
@@ -10,7 +9,6 @@ import formatDate from "@/services/DateFormat";
 
 const ResultCard = ({ profileData }) => {
   if (!profileData) return; // Don't render anything if there is no profile
-  console.log("Profile", profileData);
 
   return (
     <>
@@ -110,7 +108,6 @@ const ResultCard = ({ profileData }) => {
           </div>
         </div>
       )}
-      {/* Profile Card */}
     </>
   );
 };

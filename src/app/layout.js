@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import { UserProvider } from "@/userContext";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -14,7 +15,7 @@ const geistMono = localFont({
 
 export const metadata = {
   title: "Github Profile Finder",
-  description: "Devveloped with nextjs",
+  description: "Developed with nextjs",
 };
 
 export default function RootLayout({ children }) {
@@ -23,7 +24,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <UserProvider>{children}</UserProvider>
       </body>
     </html>
   );
